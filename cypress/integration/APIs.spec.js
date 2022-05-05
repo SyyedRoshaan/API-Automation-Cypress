@@ -5,7 +5,7 @@ describe('Product APIs', ()=>{
         it('Should return the list of products', ()=>{
             cy.request({
                 method : 'GET',
-                url : 'https://reqres.in/api/users?page=2'
+                url : 'https://reqres.in/api/users?page=3'
             }).should((response) =>{
                 expect(response.status).to.eq(200)
                 expect(response.body.page).to.eq(2)
